@@ -3,6 +3,8 @@
 ## Description
 
 This module provides functionality to analyze the completeness of a seismic network as a function magnitude and location.
+Currently it is restricted to a very simple analysis of a hypothetical network in the Netherlands.
+For real application, real data and and reliable models should be used.
 
 ## Configuration
 
