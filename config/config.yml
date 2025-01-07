@@ -1,0 +1,53 @@
+GMPE:
+  c1_shallow: -0.2
+  c1_deep: -1.6
+  c2: 1.96
+  c4: -3.44
+  c4a: -1.62
+  e1: 0.45
+  e2: -0.8
+  d: 8.0
+  pgm_sd: 0.605 # model prediction standard deviation in ln(mm/s)
+grid:
+  x_min: 144700.0
+  x_max: 165000.0
+  y_min: 452400.0
+  y_max: 469900.0
+  z_min: -4000.0
+  z_max: 0.0
+  spacing: 1000.0
+stations:
+  #nstations: 8  # number of stations in network
+  x: [
+      149165.0,
+      153735.0,
+      157369.0,
+      145747.0,
+      158394.0,
+      161253.0,
+      163018.0,
+      146720.0,
+    ] # station x-locations in RD new
+  y:
+    [
+      468598.0,
+      464170.0,
+      464980.0,
+      468859.0,
+      458748.0,
+      458591.0,
+      458990.0,
+      453446.0,
+    ]
+  z: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  noise: [-6.547, -6.547, -6.547, -6.547, -6.547, -6.547, -6.547, -6.547] # mean station noise ln(mm/s)
+  noise_sd: [0.324, 0.324, 0.324, 0.324, 0.324, 0.324, 0.324, 0.324] # SD station noise ln(-)
+completeness:
+  m_min: -2.0
+  m_max: 2.5
+  m_step: 0.1
+  SNR_threshold: 3
+  count_threshold: 4
+  fraction_threshold: 0.95
+  p_min: 0.1
+  p_max: 0.9
